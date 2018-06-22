@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Title Goes Here</title>
+  <meta name="description" content="Description goes here">
+  <meta name="keywords" content="key, words, go, here">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <h1>To Do</h1>
+  <form id="to-do-form">
+    <fieldset>
+    <legend>Add To-Do:</legend>
+    <!-- Add label here? -->
+    <input type="text" name="todo-input" id="todo-input-id" autofocus><input type="submit" name="add-btn" id="add-btn-id" value="Add">
+    </fieldset>
+  </form>
+
+  <fieldset>
+    <legend>List</legend>
+    <!-- Add label here? -->
+    <ol id="to-do-list">
+      <!-- it's ok to put label after the input i guess -->
+      <!-- :check is a pseudo element -->
+      <li id="template">
+        <label><input type="checkbox" name="checkbox" value="value"><span>first item</span></label>
+      </li>
+    </ol>
+  </fieldset>
+  <!-- when do you use button when do you use input? -->
+  <input type="button" name="clear-btn" id="clear-btn-id" value="Clear Completed">
+  <script src="scripts/jquery-3.2.1.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+
+</body>
+</html>
